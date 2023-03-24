@@ -15,13 +15,26 @@ main {
   width: 80%;
 }
 
+.scale{
+   display: inline-block; /* Строчно-блочный элемент */
+   overflow: hidden; /* Скрываем всё за контуром */
+}
+.scale img {
+   transition: 0.6s; /* Время эффекта */
+   display: block; /* Убираем небольшой отступ снизу */
+}
+.scale img:hover {
+   transform: scale(1.15); /* Увеличиваем масштаб */
+}
+
+
 .cell {
   margin-top: 100px;
   width: 295px;
   padding-right: 5px;
 }
 
-.cell > img {
+.cell img {
   width: 295px;
   height: 203.4482758621px;
   border: 1px solid seagreen;
@@ -38,12 +51,12 @@ main {
     font-size: 22px;
   }
 
-  .cell > img {
+  .cell img {
     width: 100%;
     height: 68.9655172414%;
   }
 
-  .cell > button {
+  .cell button {
     width: 40%;
     padding-top: 6px;
     padding-bottom: 6px;
