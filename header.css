@@ -1,0 +1,112 @@
+@font-face{
+  font-family: Rob;
+  src: url('fonts/Roboto-Medium.ttf');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Rob;
+}
+ul > a{
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+  text-align: center;
+  vertical-align: bottom;
+  height: 100px;
+  width: 100%;
+  line-height: 100px;
+}
+ul > a:hover{
+  color: yellow;
+}
+header{
+  background: linear-gradient(to right, rgb(107, 226, 107), rgb(42, 222, 42));
+}
+li {
+  height: 100px;
+  display: inline-block;
+  text-align: center; 
+  width: 27%; 
+  font-size: 22px;  
+  padding-left: 5px;
+}
+
+input,label {
+  display: none;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+div:not(.cell){
+  width: 100%;
+}
+
+#logo, img[name="logo"]{
+  height: 105px;
+  width: auto;
+}
+img[name="logo"]{
+  padding: 5px 5px 5px 5px; 
+  height: 95px;
+  float:left;
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+
+
+@media (max-width: 768px){
+  ul, .menu{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .block {
+      display: none;
+  }
+  #logo, img[name="logo"]{
+    height: 70px !important;
+    width: auto;
+    text-align: left;
+    padding-bottom: 10px;
+  }
+  li {
+      display: block;
+      width: 20%;
+      margin-bottom: 2px;
+  }
+
+  label {
+    width: 120px;
+    height: 60px;
+    font-size: 100px;
+    text-align: left;
+    display: block;
+    margin: 10px;
+    line-height: 40px;
+  }
+
+  input[type="checkbox"]:checked~.block {
+    display: block;
+  }
+  header{
+    width: 100px;
+  }
+  ul > a{
+    height: 70px;
+    line-height: 40px;
+  }
+}

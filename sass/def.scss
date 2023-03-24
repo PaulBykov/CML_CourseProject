@@ -1,0 +1,9 @@
+$fx: flex;
+$imgw: 295px;
+$wc : 100%;
+
+@mixin flex{
+	display: flex;
+	flex-wrap: wrap;
+	height: 100%;
+}

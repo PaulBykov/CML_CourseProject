@@ -1,0 +1,19 @@
+г.Минск ул.Бобруйская 25 <br> +375 (29) 85-44-059 
+
+
+
+<div class="element" >
+                        <img class="svg" src="svg/telegram.svg">
+                        
+                        TELEGRAM    
+                        <span>
+                            @suntours
+                        </span>
+
+                        <img class="svg" src="svg/Instagram.svg"  style="margin-bottom: 0px; width: 110px;">
+                        
+                        Instagram
+                        <span>
+                            @suntours_
+                        </span>
+                    </div>           

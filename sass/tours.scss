@@ -1,0 +1,64 @@
+@import 'def.scss';
+
+button > a{
+	display: block;
+	text-decoration: none;
+	color: white;
+	width: inherit;
+}
+
+main{
+	@include flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 80%;
+}
+
+.cell{
+	margin-top: 100px;
+	width: 295px;
+	padding-right: 5px;
+}
+
+.cell > img{
+	width: $imgw;
+	height: $imgw / 1.45;
+	border: 1px solid seagreen;
+}
+
+.icons{
+	display: $fx;
+	justify-content: center;
+}
+
+@media(max-width: 768px){
+	.cell{
+		width: $wc;
+		font-size: 22px;
+	}
+	.cell > img{
+		width: $wc;
+		height: $wc / 1.45;
+	}
+	.cell > button{
+		width: 40%;
+		padding-top: 6px;
+		padding-bottom: 6px;
+		margin-left: 60%;
+	}
+}
+
+
+button{
+	width: $imgw / 2;
+	margin-top: 25px;
+	background-color: rgb(21, 255, 87);
+	color: white;
+	transition: 0.4s linear;
+	border-radius: 5px;
+	margin-left: $imgw / 2;
+}
+button:hover{
+	background-color: green;
+}

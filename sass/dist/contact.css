@@ -1,0 +1,52 @@
+@font-face {
+  font-family: golos;
+  src: url("fonts/golos-ui_bold.woff");
+}
+
+.svg {
+  width: 100px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+
+span:not(.footer) {
+  font-weight: bold;
+  font-size: 26px;
+  font-family: golos, "golos-ui_bold", cursive;
+}
+
+
+.choice {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin: 15px 0 15px 0;
+  text-align: center;
+  color: seagreen;
+}
+
+.first, .second, .third{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.tbl{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80% !important;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

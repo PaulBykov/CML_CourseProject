@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<tours>
+			<SHRI>
+				<DESCRIPTION>
+					Новый горячий тур в экзотическую страну!
+				</DESCRIPTION>
+
+				<CITY>
+					Негомбо
+				</CITY>
+
+				<HOTEL>
+					Camelot Beach Hotel  ★★★★☆ 
+				</HOTEL>
+
+			</SHRI>
+
+			<EGYPT>
+				<DESCRIPTION>
+					Классический вариант 
+				</DESCRIPTION>
+
+				<CITY>
+					Негомбо
+				</CITY>
+
+				<HOTEL>
+					Camelot Beach Hotel  ★★★★☆ 
+				</HOTEL>
+			</EGYPT>
+
+			<TURKEY>
+
+			</TURKEY>
+
+			<INDONESIA>
+
+			</INDONESIA>
+
+			<BOLGARIA>
+
+			</BOLGARIA>
+
+			<JAPAN>
+
+			</JAPAN>
+
+			<PORTUGAL>
+
+			</PORTUGAL>
+
+			<COSTARICA>
+
+			</COSTARICA>
+
+			<BRAZIL>
+
+			</BRAZIL>
+
+			<ALPS>
+
+			</ALPS>
+
+			<CANADA>
+
+			</CANADA>
+
+			<CRUISE>
+
+			</CRUISE>
+
+	</tours>
