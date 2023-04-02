@@ -17,14 +17,21 @@ main{
 
 .cell{
 	margin-top: 100px;
-	width: 295px;
+	width: $imgw;
 	padding-right: 5px;
 }
 
-.cell > img{
+.scale > img{
 	width: $imgw;
 	height: $imgw / 1.45;
 	border: 1px solid seagreen;
+}
+
+.scale {
+    transition: 0.4s;
+   }
+.scale:hover{
+    transform: scale(1.15); /* Увеличиваем масштаб */
 }
 
 .icons{
@@ -37,7 +44,7 @@ main{
 		width: $wc;
 		font-size: 22px;
 	}
-	.cell > img{
+	.scale > img{
 		width: $wc;
 		height: $wc / 1.45;
 	}
@@ -52,13 +59,24 @@ main{
 
 button{
 	width: $imgw / 2;
+	height: $imgw / 15;
 	margin-top: 25px;
+	font-size: 16px;
 	background-color: rgb(21, 255, 87);
-	color: white;
 	transition: 0.4s linear;
 	border-radius: 5px;
+	border: 0;
 	margin-left: $imgw / 2;
+	box-shadow: 3px 4px 12px 1px black;;
+}
+button > a{
+	color: black;
+	transition: 0.4s linear;
 }
 button:hover{
 	background-color: green;
 }
+button:hover > a{
+	color: white;
+}
+

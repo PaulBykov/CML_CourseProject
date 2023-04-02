@@ -1,6 +1,6 @@
 @import 'def.scss';
 
-img[src="img/ocean.jpg"]{
+img[src="img/main.jpg"]{
     padding-top: 10px;
     width: 42%;
     height: 42%;
@@ -54,7 +54,7 @@ img[src="img/ocean.jpg"]{
   }
   
   @media (max-width: 768px){
-    img[src="img/ocean.jpg"], span:not(.text){
+    img[src="img/main.jpg"], span:not(.text){
       float:none;
       padding-left: 10%;
       width: 75%;
