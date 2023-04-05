@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="keywords" content="Туристическое агентство">
 
-        <title>Связь</title>
+        <title>Канада</title>
         <link rel="stylesheet" href="..\header.css" media="screen">
         <link rel="stylesheet" href="..\footer.css" media="screen">
         <link rel="stylesheet" href="style.css" media="screen">
@@ -32,6 +32,12 @@
                 <div class="image">  <img src="../img/tours/vancuver.jpg"> </div>
 
                 <div class="info">
+                    
+                    <span>
+                        <h1> Ближайшая дата: </h1>
+                        <div class="date"> </div>
+                    </span>
+
                     <span>
                         <h1> Город: </h1>
                         <div class="city"> </div>
@@ -48,6 +54,59 @@
                     </span>
                 </div>
             </div>
+            <h2> Узнать цену </h2>
+
+            <div>
+                <div class="dlc">
+                    Базовая стоимость
+
+                    <div class="price1">   
+                        3104
+                    </div>
+                    BYN
+                </div>
+
+                <div class="dlc">
+                    Посещение Торонто
+
+                    <div class="price">   
+                        45
+                    </div>
+                    €   
+                    <input class="include" type="checkbox" onclick="addition()"> </input>
+                </div>
+
+                <div class="dlc">
+                    Посещение водопада Ниагара
+
+                    <div class="price">   
+                        45
+                    </div>
+                    €
+                    <input class="include" type="checkbox"  onclick="addition()"> </input>
+                </div>
+
+                <div class="dlc">
+                    Подъем на вырешину горы
+
+                    <div class="price">   
+                        30
+                    </div>
+                    €
+                    <input class="include" type="checkbox" onclick="addition()"> </input>
+                </div>
+
+
+
+                <h2> Итого: </h2> 
+                <div class="result"> 
+                    Расчетная стоимость = <div class="byn">  </div> BYN + <div class="euro"> </div> €
+
+
+                </div>
+
+
+            </div>            
         </main>
 
 
@@ -57,5 +116,6 @@
             </span>
         </footer>
         <script src="../js/tour.js"></script>
+        <script src="../js/price.js"></script>
     </body>
 </html>

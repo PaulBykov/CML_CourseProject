@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="keywords" content="Туристическое агентство">
 
-        <title>Связь</title>
+        <title>Турция</title>
         <link rel="stylesheet" href="..\header.css" media="screen">
         <link rel="stylesheet" href="..\footer.css" media="screen">
         <link rel="stylesheet" href="style.css" media="screen">
@@ -33,6 +33,11 @@
 
                 <div class="info">
                     <span>
+                        <h1> Ближайшая дата: </h1>
+                        <div class="date"> </div>
+                    </span>
+                    
+                    <span>
                         <h1> Город: </h1>
                         <div class="city"> </div>
                     </span>
@@ -48,6 +53,61 @@
                     </span>
                 </div>
             </div>
+
+            <h2> Узнать цену </h2>
+
+            <div>
+                <div class="dlc">
+                    Базовая стоимость
+
+                    <div class="price1">   
+                        1968
+                    </div>
+                    BYN
+                </div>
+
+                <div class="dlc">
+                    Экскурсия по Стамбулу
+
+                    <div class="price">   
+                        35
+                    </div>
+                    €   
+                    <input class="include" type="checkbox" onclick="addition()"> </input>
+                </div>
+
+                <div class="dlc">
+                    Руины древного города в Эфесе
+
+                    <div class="price">   
+                        40
+                    </div>
+                    €
+                    <input class="include" type="checkbox"  onclick="addition()"> </input>
+                </div>
+
+                <div class="dlc">
+                    Посещение античного театр в Аспенде
+
+                    <div class="price">   
+                        35
+                    </div>
+                    €
+                    <input class="include" type="checkbox" onclick="addition()"> </input>
+                </div>
+
+
+
+                <h2> Итого: </h2> 
+                <div class="result"> 
+                    Расчетная стоимость = <div class="byn">  </div> BYN + <div class="euro"> </div> €
+
+
+                </div>
+
+
+            </div>
+            
         </main>
 
 
@@ -57,5 +117,6 @@
             </span>
         </footer>
         <script src="../js/tour.js"></script>
+        <script src="../js/price.js"></script>
     </body>
 </html>

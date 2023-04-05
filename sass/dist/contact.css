@@ -1,6 +1,6 @@
 @font-face {
   font-family: golos;
-  src: url("fonts/golos-ui_bold.woff");
+  src: url(fonts/golos-ui_bold.woff);
 }
 .svg {
   width: 100px;
@@ -76,4 +76,18 @@ iframe {
     align-items: center;
     justify-content: space-around;
   }
+}
+.help {
+  display: flex;
+  flex-direction: row;
+}
+
+.visa, .strah {
+  display: flex;
+  flex-direction: column;
+}
+
+.ymaps3x0--map, canvas {
+  width: 50% !important;
+  height: 50% !important;
 }

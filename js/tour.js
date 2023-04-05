@@ -7,13 +7,13 @@ fetch('../xml/materials.xml')
     const descs = xmlDoc.getElementsByTagName('DESCRIPTION');
     const cities = xmlDoc.getElementsByTagName('CITY');
     const hotels = xmlDoc.getElementsByTagName('HOTEL');
-    const date = xmlDoc.getElementsByTagName('DATE');
+    const dates = xmlDoc.getElementsByTagName('DATE');
     for(let i = 0; i <= 12; i++){
       if(document.location.pathname == '/tours/' + Documents[i]){
+        document.querySelector('.date').innerHTML = dates[i].textContent;
         document.querySelector('.city').innerHTML = cities[i].textContent;
         document.querySelector('.desc').innerHTML = descs[i].textContent;
         document.querySelector('.hotel').innerHTML = hotels[i].textContent;
-        document.querySelector('.date').innerHTML = cities[i].textContent;
       }
     }
   })

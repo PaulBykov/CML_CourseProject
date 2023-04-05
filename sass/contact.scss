@@ -1,6 +1,6 @@
 @font-face {
     font-family: golos;
-    src: url("fonts/golos-ui_bold.woff");
+    src: url(fonts/golos-ui_bold.woff);
   }
   
   .svg {
@@ -79,3 +79,13 @@ body{
       justify-content: space-around;
     }
   }
+
+.help{
+  display: flex;
+  flex-direction: row;
+}
+
+.visa, .strah{
+  display: flex;
+  flex-direction: column;
+}

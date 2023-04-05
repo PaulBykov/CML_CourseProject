@@ -22,10 +22,9 @@ main {
   padding-right: 5px;
 }
 
-.scale > img {
+.scale img {
   width: 375px;
   height: 258.6206896552px;
-  border: 1px solid seagreen;
 }
 
 .scale {
@@ -48,7 +47,7 @@ main {
     font-size: 22px;
   }
 
-  .scale > img {
+  .scale img {
     width: 100%;
     height: 68.9655172414%;
   }
@@ -84,4 +83,12 @@ button:hover {
 
 button:hover > a {
   color: white;
+}
+
+span {
+  display: block;
+}
+
+.special {
+  color: #FFAC33;
 }
