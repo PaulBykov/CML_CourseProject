@@ -12,11 +12,6 @@ body {
   width: 100% !important;
 }
 
-iframe {
-  width: 360px;
-  height: 300px;
-}
-
 span:not(.footer) {
   font-weight: bold;
   font-size: 26px;
@@ -33,7 +28,7 @@ span:not(.footer) {
 }
 
 h1 {
-  margin: 15px 0 15px 0;
+  margin: 21px 0 20px 0;
   text-align: center;
   color: seagreen;
 }
@@ -44,6 +39,7 @@ h1 {
   flex-wrap: nowrap;
   justify-content: center;
   text-align: left;
+  width: auto;
 }
 
 .tbl {
@@ -66,10 +62,6 @@ strong > img {
   width: 15px;
 }
 
-iframe {
-  padding-right: 8px;
-}
-
 @media (max-width: 840px) {
   .tbl {
     flex-direction: column;
@@ -85,9 +77,4 @@ iframe {
 .visa, .strah {
   display: flex;
   flex-direction: column;
-}
-
-.ymaps3x0--map, canvas {
-  width: 50% !important;
-  height: 50% !important;
 }

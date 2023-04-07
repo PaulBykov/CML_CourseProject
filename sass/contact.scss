@@ -12,11 +12,6 @@
 body{
   width: 100% !important;
 }
-
-  iframe{
-    width: 360px;
-    height: 300px;
-  }
   
   span:not(.footer) {
     font-weight: bold;
@@ -35,7 +30,7 @@ body{
   }
   
   h1 {
-    margin: 15px 0 15px 0;
+    margin: 21px 0 20px 0;
     text-align: center;
     color: seagreen;
   }
@@ -46,6 +41,7 @@ body{
     flex-wrap: nowrap;
     justify-content: center;
     text-align: left;
+    width: auto;
   }
   
   .tbl{
@@ -67,11 +63,6 @@ body{
     width: 15px;
   }
 
-  iframe{
-    padding-right: 8px;
-  }
-
-
   @media (max-width: 840px) {
     .tbl{
       flex-direction: column;
@@ -89,3 +80,4 @@ body{
   display: flex;
   flex-direction: column;
 }
+
