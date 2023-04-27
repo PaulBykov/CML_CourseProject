@@ -68,6 +68,10 @@ strong > img {
     align-items: center;
     justify-content: space-around;
   }
+
+  figcaption {
+    margin: 25px 0px 5px 0px;
+  }
 }
 .help {
   display: flex;

@@ -1,4 +1,7 @@
-@charset "UTF-8";
+* {
+  font-style: normal;
+}
+
 button > a {
   display: block;
   text-decoration: none;
@@ -17,23 +20,22 @@ main {
 }
 
 .cell {
+  position: relative;
+  width: 375px;
+  height: 500px;
   margin-top: 100px;
-  width: 375px;
-  padding-right: 5px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 9px 0;
 }
 
-.scale img {
-  width: 375px;
-  height: 258.6206896552px;
+.cell > span {
+  font-size: 22px;
 }
 
-.scale {
-  transition: 0.4s;
-}
-
-.scale:hover {
-  transform: scale(1.15);
-  /* Увеличиваем масштаб */
+.tourImg img {
+  width: 100%;
+  height: 277.7777777778px;
+  border-radius: 10px 10px 0 0;
 }
 
 .icons {
@@ -41,34 +43,50 @@ main {
   justify-content: center;
 }
 
-@media (max-width: 768px) {
+h2, span {
+  padding-left: 5px;
+}
+
+.time {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 10%;
+}
+
+.time > span {
+  font-size: 18px;
+}
+
+span > img {
+  width: 20px;
+}
+
+@media (max-width: 1000px) {
   .cell {
     width: 100%;
+    height: 550px;
     font-size: 22px;
   }
 
   .scale img {
     width: 100%;
-    height: 68.9655172414%;
-  }
-
-  .cell > button {
-    width: 40%;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    margin-left: 60%;
+    height: 100%/1.45;
   }
 }
 button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   width: 187.5px;
   height: 25px;
-  margin-top: 25px;
+  margin: 0 10px 10px 0;
   font-size: 16px;
   background-color: #15ff57;
   transition: 0.4s linear;
   border-radius: 5px;
   border: 0;
-  margin-left: 187.5px;
   box-shadow: 3px 4px 12px 1px black;
 }
 

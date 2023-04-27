@@ -9,7 +9,11 @@
   padding: 0;
   font-family: Rob;
 }
-ul > a{
+ul > li {
+  display: block;
+
+}
+ul >li > a{
   text-decoration: none;
   color: black;
   font-size: 22px;
@@ -19,11 +23,15 @@ ul > a{
   width: 100%;
   line-height: 100px;
 }
-ul > a:hover{
-  color: yellow;
+ul > li > a:hover {
+   
+    color: orange ;
+  
+  
 }
 header{
   background: linear-gradient(to right, rgb(107, 226, 107), rgb(42, 222, 42));
+  box-shadow: 1px 1px 8px 0px;
 }
 li {
   height: 100px;
@@ -34,7 +42,7 @@ li {
   padding-left: 5px;
 }
 
-input:not(.include),label {
+#burger-menu ,label[for="burger-menu"] {
   display: none;
 }
 
@@ -70,10 +78,12 @@ img[name="logo"]{
 
 
 
-@media (max-width: 768px){
+@media (max-width: 524px){
   ul, .menu{
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: flex-start;
+
   }
   .block {
       display: none;
@@ -90,7 +100,7 @@ img[name="logo"]{
       margin-bottom: 2px;
   }
 
-  label {
+  label:not(.checkbox-custom-label) {
     width: 120px;
     height: 60px;
     font-size: 100px;
@@ -104,10 +114,12 @@ img[name="logo"]{
     display: block;
   }
   header{
-    width: 100px;
+    width: 120px;
   }
   ul > a{
     height: 70px;
     line-height: 40px;
   }
 }
+
+

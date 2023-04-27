@@ -1,7 +1,7 @@
 fetch('../xml/materials.xml')
   .then(res => res.text())
   .then(xmlString => {
-    const Documents = ['shri.html', 'egypt.html', 'turkey.html', 'indonesia.html', 'bolgaria.html', 'japan.html', 'portugal.html', 'costa-rica.html', 'brazil.html', 'alps.html', 'canada.html', 'cruise.html']
+    const Documents = ['shri.html', 'egypt.html', 'turkey.html', 'indonesia.html', 'bolgaria.html', 'japan.html', 'portugal.html', 'costa-rica.html', 'brazil.html', 'alps.html', 'canada.html', 'tunis.html']
     const parser = new DOMParser();
     const xmlDoc = parser.parseFromString(xmlString, 'text/xml');
     const descs = xmlDoc.getElementsByTagName('DESCRIPTION');

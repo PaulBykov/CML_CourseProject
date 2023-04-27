@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="ru">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="keywords" content="Туристическое агентство">
+
+        <title>Круиз</title>
+        <link rel="stylesheet" href="..\header.css" media="screen">
+        <link rel="stylesheet" href="..\footer.css" media="screen">
+        <link rel="stylesheet" href="style.css" media="screen">
+    </head>
+    <body>
+        <header>
+            <div class="menu">
+                <img src="..\svg/sun1.svg" name="logo">
+                <label for="burger-menu">&#8801;</label>
+                <input type="checkbox" name="" id="burger-menu">
+                <div class="block">
+                    <ul>
+                        <li><a href="..\tours.html"> Туры </a></li> 
+                        <li> <a href="..\index.html" style="font-size: 24px"> Главная </a> </li>
+                        <li> <a href="..\contanct.html"> Связь </a> </li>
+                   </ul>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="tour">
+
+                <div class="image">  <img src="../img/tours/tunis.jpg"> </div>
+
+                <div class="info">
+                    <span>
+                        <h1> Ближайшая дата: </h1>
+                        <div class="date"> </div>
+                    </span>
+                    
+                    <span>
+                        <h1> Город: </h1>
+                        <div class="city"> </div>
+                    </span>
+
+                    <span>
+                        <h1> Отель: </h1>
+                        <div class="hotel"></div>
+                    </span> 
+
+                    <span>
+                        <h1> Описание: </h1> 
+                        <div class="desc"> </div>
+                    </span>
+                </div>
+            </div>
+
+
+            <div  id="section">
+                <h2> Узнать цену </h2>
+                <div class="dlc">
+                    Базовая стоимость
+
+                    <div class="price1">   
+                        2333
+                    </div>
+                    BYN
+                </div>
+
+                <div class="dlc">
+                    Посещение театральной постановки
+
+                    <div class="price">   
+                        40
+                    </div>
+                    €   
+                    <input class="include" type="checkbox" onclick="addition()"> </input>
+                </div>
+
+                <div class="dlc">
+                    Мини-бар в каюте
+
+                    <div class="price">   
+                        35
+                    </div>
+                    €
+                    <input class="include" type="checkbox"  onclick="addition()"> </input>
+                </div>
+
+
+                <h2> Итого: </h2> 
+                <div class="result"> 
+                    Расчетная стоимость = <div class="byn">  </div> BYN + <div class="euro"> </div> €
+
+
+                </div>
+
+
+            </div>            
+        </main>
+
+
+        <footer>
+            <span class = "footer">
+               ООО "Сантурс" является официальным заре&shy;гистрегистри&shy;рован&shy;ным бизнесом законно предоставл&shy;яющий свои услуги на тер&shy;ритории 25 стран мира. Все права защищены.
+            </span>
+        </footer>
+        <script src="../js/tour.js"></script>
+        <script src="../js/price.js"></script>
+    </body>
+</html>
