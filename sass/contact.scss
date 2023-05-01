@@ -1,7 +1,4 @@
-@font-face {
-    font-family: golos;
-    src: url(fonts/golos-ui_bold.woff);
-  }
+@import 'fonts.scss';
   
   .svg {
     width: 100px;
@@ -84,3 +81,7 @@ body{
   flex-direction: column;
 }
 
+.name{
+    font-weight: normal;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

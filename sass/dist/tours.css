@@ -1,5 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+span {
+  font-family: "Ysabeau", sans-serif;
+}
+
+.cell > span {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Roboto", sans-serif;
+}
+
 * {
-  font-style: normal;
+  font-family: "Inter", sans-serif;
+}
+
+header a {
+  font-family: "Roboto", sans-serif;
+}
+
+footer > span {
+  font-size: 18px !important;
 }
 
 button > a {
@@ -9,23 +33,37 @@ button > a {
   width: inherit;
 }
 
-main {
+.icons {
   display: flex;
   flex-wrap: wrap;
   height: 100%;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 80%;
+  align-self: center;
+}
+
+main {
+  display: flex;
+  width: 90%;
+  align-self: center;
+  justify-content: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .cell {
   position: relative;
   width: 375px;
-  height: 500px;
+  height: 460px;
   margin-top: 100px;
   border-radius: 15px;
   box-shadow: 0px 0px 9px 0;
+  overflow: hidden;
 }
 
 .cell > span {
@@ -38,41 +76,56 @@ main {
   border-radius: 10px 10px 0 0;
 }
 
-.icons {
-  display: flex;
-  justify-content: center;
-}
-
 h2, span {
   padding-left: 5px;
 }
 
-.time {
+.time, .spec_time {
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: space-around;
-  margin-top: 10%;
+  margin-top: 7%;
 }
 
-.time > span {
-  font-size: 18px;
+.spec_time {
+  margin-top: 2% !important;
+}
+
+.time > span, .spec_time > span {
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
 }
 
 span > img {
   width: 20px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 840px) {
   .cell {
-    width: 100%;
+    width: 80%;
     height: 550px;
     font-size: 22px;
   }
 
-  .scale img {
+  .tourImg img {
     width: 100%;
-    height: 100%/1.45;
+    height: 312.5px;
+  }
+}
+@media (max-width: 524px) {
+  .cell {
+    width: 100%;
+    height: 460px;
+  }
+
+  .time {
+    margin-bottom: 5%;
+  }
+
+  .tourImg img {
+    width: 100%;
+    height: 267.8571428571px;
   }
 }
 button {
@@ -87,7 +140,7 @@ button {
   transition: 0.4s linear;
   border-radius: 5px;
   border: 0;
-  box-shadow: 3px 4px 12px 1px black;
+  box-shadow: 2px 2px 12px 1px black;
 }
 
 button > a {
@@ -109,4 +162,19 @@ span {
 
 .special {
   color: #FFAC33;
+}
+
+.cell:hover {
+  box-shadow: red;
+}
+
+.cell > a > img {
+  transition: 0.4s;
+  display: block;
+  max-height: 100%;
+}
+
+.cell > a > img:hover {
+  box-shadow: 3px 3px 4px 0px #c2c2c2;
+  transform: scale(1.03);
 }

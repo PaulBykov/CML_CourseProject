@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:wght@400&display=swap'); // font-family: 'Ysabeau', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');   // font-family: 'Inter', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); //font-family: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap'); //font-family: 'Montserrat', sans-serif;
+
+span{
+    font-family: 'Ysabeau', sans-serif;
+}
+
+.cell > span{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2,h3{
+    font-family: 'Roboto', sans-serif;
+}
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+header a{
+    font-family: 'Roboto', sans-serif;
+}
+
+footer > span{
+    font-size: 18px !important;
+}

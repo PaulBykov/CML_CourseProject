@@ -1,7 +1,4 @@
-@font-face {
-    font-family: Literata;
-    src: url("Literata-ExtraLight.woff");
-}
+@import '../sass/dist/fonts.css';
 
 main{
     margin-top: 20px;

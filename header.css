@@ -1,18 +1,14 @@
-@font-face{
-  font-family: Rob;
-  src: url('fonts/Roboto-Medium.ttf');
-}
-
 
 *{
   margin: 0;
   padding: 0;
-  font-family: Rob;
 }
+
 ul > li {
   display: block;
 
 }
+
 ul >li > a{
   text-decoration: none;
   color: black;
@@ -23,16 +19,16 @@ ul >li > a{
   width: 100%;
   line-height: 100px;
 }
+
 ul > li > a:hover {
-   
     color: orange ;
-  
-  
 }
+
 header{
-  background: linear-gradient(to right, rgb(107, 226, 107), rgb(42, 222, 42));
+  background: linear-gradient(to right, rgb(0, 255, 0), rgb(36, 227, 36));
   box-shadow: 1px 1px 8px 0px;
 }
+
 li {
   height: 100px;
   display: inline-block;
@@ -44,6 +40,7 @@ li {
 
 #burger-menu ,label[for="burger-menu"] {
   display: none;
+  font-family: normal;
 }
 
 ul{
@@ -55,18 +52,16 @@ ul{
   flex-wrap: nowrap;
   justify-content: space-around;
 }
+
 div:not(.cell){
   width: 100%;
 }
 
-#logo, img[name="logo"]{
-  height: 105px;
-  width: auto;
-}
-img[name="logo"]{
+#logo{
   padding: 5px 5px 5px 5px; 
   height: 95px;
-  float:left;
+  float:left; 
+  width: auto;
 }
 
 .menu{
@@ -75,8 +70,6 @@ img[name="logo"]{
   flex-wrap: nowrap;
   justify-content: flex-start;
 }
-
-
 
 @media (max-width: 524px){
   ul, .menu{

@@ -1,114 +1,103 @@
 @import 'def.scss';
+@import 'fonts.scss';
 
-img[src="img/main.jpg"]{
+  img[src="img/main.jpg"]{
     padding-top: 10px;
     width: 42%;
-    height: 42%;
-    float: right;
+    height: 100%;
   }
+
   img{
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
+    @include noSelect;
   }
-  span{
-    display: inline-block;
-    width: 45%;
-    padding-left: 5%;
-    font-size: 18px;
-    float: left;
-  }
-  h1{
-    margin-top: 5%;
-    margin-bottom: 3%;
-    text-align: center;
-    background-color: seagreen;
-    coloR:white;
-  }
+
   .about-us{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center ;
-  }
-  .us{
-    width: 140px;
-    height: 1%;
-  }
-  .main{
-    margin-bottom: 80px;
+    align-items: center;
+
+    width: 45%;
+    font-size: 20px;
   }
 
-  @media (max-width: 524px){
-    .container1, .container{
-      @include flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      width: 100%;
-    }
-    .div2{
-      width: 100% !important;
-    }
+  .us{
+    width: 140px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    background-color: seagreen;
+    color:white;
   }
+
+
+  .about-us > span{
+    padding-left: 5%;
+  }
+
+  .main{
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+  }
+
   
   @media (max-width: 768px){
-    img[src="img/main.jpg"], span:not(.text){
-      float:none;
-      padding-left: 10%;
+    .ico{
+      width: 100%;
+    }
+    .container{
+      flex-direction: column
+    };
+  }
+
+
+  @media (max-width: 1024px){
+    img[src="img/main.jpg"]{
       width: 75%;
-      padding-bottom: 2%;
+      margin: 0 auto;
     }
-    span:not(.text){
-      padding-bottom: auto;
-      width: 80%;
-    }
-    
+    .main{
+      flex-direction: column;
+      margin-bottom: 3%;
+    } 
   }
   
-  
-  .container, .container1 {
+  .container{
     display: flex;
-    align-content: space-between;
     align-items: flex-start;
     justify-content: space-between;
   }
   
-  .container > .div1{
-    margin-top: 50px;
-    font-weight: bold;
-  }
-  
-  .div1, .div2{
+  .ico{
+    text-align: center;
+    flex-wrap: nowrap;
+    align-content: center;
+
+    width: 33%;
+
     border-collapse: collapse;
     margin-top: 30px;
     flex-direction: row;
-    flex-wrap: wrap;
-    order: 1;
-    text-align: center;
   }
-  .div2{
-    flex-wrap: nowrap;
-    align-content: center;
-    width: 33%;
-  }
+
   .svg{
     width: 20%;
     height: 20%;
     padding-bottom: 10px;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
+    
+    @include noSelect;
   }
-  .div1 > h1{
-    margin: 0;
-    padding: 0;
+
+  h1{
     padding-bottom: 5px;
     background-color: seagreen;
     color: white;
-  }
-  .text{
-    margin-left: 20%;
+    width: 100%;
+    text-align: center;
   }
 
+  figcaption{
+    width: 45%;
+    display: inline-block;
+  }
+  
