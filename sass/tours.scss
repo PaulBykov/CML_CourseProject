@@ -38,6 +38,8 @@ body{
 	border-radius: 15px;
 	box-shadow: 0px 0px 9px 0;
 
+	background-color: white;
+
 	overflow: hidden;
 }
 
@@ -116,7 +118,7 @@ button{
 
 	font-size: 16px;
 
-	background-color: rgb(21, 255, 87);
+	background-color: #FFAC33;
 	transition: 0.4s linear;
 	border-radius: 5px;
 	border: 0;
@@ -130,7 +132,7 @@ button > a{
 }
 
 button:hover{
-	background-color: green;
+	background-color: #9d5f03;
 }
 
 button:hover > a{

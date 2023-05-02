@@ -1,9 +1,11 @@
 footer{
 
-	background: linear-gradient(to left, rgb(107, 226, 107), rgb(42, 222, 42));;
+	background-color: #313131;
+    color:white;
+	
   	padding: 10px 0 10px 0;
   	
-	margin-top: 8%;
+	margin-top: 7%;
 
   	display: flex;
   	justify-content: center;
@@ -13,5 +15,4 @@ footer{
 }
 .footer{
 	width: 100%;
-	padding: 5px;
 }

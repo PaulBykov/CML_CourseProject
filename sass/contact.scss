@@ -10,17 +10,16 @@ body{
   width: 100% !important;
 }
   
-  span:not(.footer) {
+  .name {
     font-weight: bold;
     font-size: 26px;
-    font-family: golos, "golos-ui_bold", cursive;
   }
   
   
   .choice {
     display: flex;
     flex-direction: row;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     align-content: space-between;
     justify-content: center;
     align-items: center;
@@ -29,7 +28,7 @@ body{
   h1 {
     margin: 21px 0 20px 0;
     text-align: center;
-    color: seagreen;
+    color: #FFAC33;
   }
   
   .cell{
@@ -42,6 +41,7 @@ body{
   }
   
   .tbl{
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -79,9 +79,4 @@ body{
 .visa, .strah{
   display: flex;
   flex-direction: column;
-}
-
-.name{
-    font-weight: normal;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

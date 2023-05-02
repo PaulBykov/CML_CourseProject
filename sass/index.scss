@@ -1,7 +1,7 @@
 @import 'def.scss';
 @import 'fonts.scss';
 
-  img[src="img/main.jpg"]{
+  img[src="img/main.png"]{
     padding-top: 10px;
     width: 42%;
     height: 100%;
@@ -22,11 +22,8 @@
   }
 
   .us{
-    width: 140px;
-    margin-top: 5%;
-    margin-bottom: 3%;
-    background-color: seagreen;
-    color:white;
+    color: #FFA559;
+    background-color: #fff8f0;
   }
 
 
@@ -38,28 +35,44 @@
     margin-bottom: 5%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   
   @media (max-width: 768px){
-    .ico{
-      width: 100%;
+    main{ 
+      .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .svg{
+        width: 60%;
+      }
+      figcaption{
+        width: 100%;
+      }
+      
     }
-    .container{
-      flex-direction: column
-    };
   }
 
 
   @media (max-width: 1024px){
-    img[src="img/main.jpg"]{
+    img[src="img/main.png"]{
       width: 75%;
       margin: 0 auto;
     }
     .main{
       flex-direction: column;
+      justify-content: center;
       margin-bottom: 3%;
     } 
+    .about-us{
+      width: 100%;
+    }
+    .review{
+      flex-basis: 200px !important;
+    }
   }
   
   .container{
@@ -81,8 +94,8 @@
   }
 
   .svg{
-    width: 20%;
-    height: 20%;
+    width: 25%;
+    height: 25%;
     padding-bottom: 10px;
     
     @include noSelect;
@@ -90,8 +103,8 @@
 
   h1{
     padding-bottom: 5px;
-    background-color: seagreen;
-    color: white;
+    background-color: #313131;
+    color: #FFA559;
     width: 100%;
     text-align: center;
   }
@@ -101,3 +114,37 @@
     display: inline-block;
   }
   
+#rew{
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.review {
+  flex: 0 0 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.quote {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.author {
+  font-size: 16px;
+  font-style: italic;
+}
