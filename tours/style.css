@@ -5,15 +5,7 @@ main{
 }
 
 h1{
-    font-size: 24px;
-}
-
-span{
-    width: 80%;
-}
-
-h1, span > div{
-    display: inline !important;
+    font-size: 20px;
 }
 
 .image img{
@@ -27,6 +19,7 @@ h1, span > div{
     justify-content: center;
     text-align: center;
 }
+
 .tour{
     display: flex;
     flex-direction: row;
@@ -49,9 +42,6 @@ h1, span > div{
     .info{
         padding-left: 10px;
         justify-content: center;
-    }
-    span{
-        width: 95%;
     }
 }
 
@@ -76,10 +66,6 @@ h2{
 
 .price, .price1{
     display: inline;
-}
-
-.tour{
-    margin-bottom: 30px;
 }
 
 .include{
@@ -122,7 +108,11 @@ h2{
     width: auto !important;
 }
 
+.desc{
+    width: 90%;
+}
 
 .dlcText{
     width: 100%;
 }   
+

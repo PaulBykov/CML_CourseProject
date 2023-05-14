@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
-span {
+span, .companyName {
   font-family: "Ysabeau", sans-serif;
 }
 
@@ -50,7 +50,7 @@ img {
 
 .us {
   color: #FFA559;
-  background-color: #fff8f0;
+  background-color: #fff5f2;
 }
 
 .about-us > span {
@@ -104,13 +104,14 @@ img {
 }
 
 .ico {
+  display: flex;
   text-align: center;
   flex-wrap: nowrap;
-  align-content: center;
+  align-items: center;
   width: 33%;
   border-collapse: collapse;
   margin-top: 30px;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .svg {
@@ -125,7 +126,7 @@ img {
 
 h1 {
   padding-bottom: 5px;
-  background-color: #313131;
+  background-color: #007172;
   color: #FFA559;
   width: 100%;
   text-align: center;
@@ -133,7 +134,6 @@ h1 {
 
 figcaption {
   width: 45%;
-  display: inline-block;
 }
 
 #rew {

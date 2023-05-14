@@ -4,12 +4,12 @@
   }
 
   body{
-    background-color: #fff8f0;
+    background-color: #fff5f2;
   }
   
   header{
     height: 100px;
-    background-color: #313131;
+    background-color: #007172;
     color:white;
   }
 
@@ -24,7 +24,7 @@
   }
 
   .links > a:hover{
-    background-color: orange;
+    background-color: #FFA559;
   }
 
   .links{

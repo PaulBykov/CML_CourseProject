@@ -79,17 +79,11 @@ span > img{
 }
 
 
-@media(max-width: 840px){
+@media (max-width: 840px){
 	.cell{
-		width: 80%;
-		height: 550px;
-		font-size: 22px;
+		width: $imgw + 100px;
+		height: 485px;
 	}
-	.tourImg img{
-		width: 100%;
-		height: $imgw / 1.20;
-	}
-
 }
 
 @media (max-width: 524px) {
@@ -123,20 +117,20 @@ button{
 	border-radius: 5px;
 	border: 0;
 
-	box-shadow: 2px 2px 12px 1px black;
-}
-
-button > a{
 	color: black;
 	transition: 0.4s linear;
+
+	box-shadow: 2px 2px 12px 1px black;
 }
 
 button:hover{
 	background-color: #9d5f03;
+	color: white;
 }
 
-button:hover > a{
-	color: white;
+
+button{
+	cursor: pointer;
 }
 
 span{
@@ -161,4 +155,3 @@ span{
 	box-shadow: 3px 3px 4px 0px rgb(194, 194, 194);
 	transform: scale(1.03);
 }
-

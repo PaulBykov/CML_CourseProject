@@ -69,14 +69,63 @@ body{
     figcaption{
       margin: 25px 0px 5px 0px;
     }
+    main > .document-help{
+      flex-direction: column;
+    }
+    ul>li:first-child{
+      margin-top: 20px
+    };
   }
 
-.help{
-  display: flex;
-  flex-direction: row;
-}
+  .document-help {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .document-help > div{
+    max-width: 800px;
+    margin-right: 20px;
+  }
+  
+  .document-help h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 40;
+  }
 
-.visa, .strah{
-  display: flex;
-  flex-direction: column;
-}
+  .contact-info, .contact-us{
+    margin-top: 2%;
+  }
+
+
+  ul {
+    list-style: none;
+    padding-left: 20px;
+    li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 30px;
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #007172;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #ccc;
+      }
+    }
+  }
+  
